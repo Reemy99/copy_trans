@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #gameContainer {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      border: 1px solid #000;
+      margin: 20px auto;
+    }
+
+    #ball {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      top: 140px;
+      left: 90px;
+    }
+
+    #topBar, #bottomBar {
+      position: absolute;
+      width: 60px;
+      height: 10px;
+      background-color: blue;
+      left: 70px;
+    }
+
+    #topBar {
+      top: 10px;
+    }
+
+    #bottomBar {
+      bottom: 10px;
+    }
+
+    #divider {
+      position: absolute;
+      width: 200px;
+      height: 2px;
+      background-color: black;
+      top: 150px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="ball"></div>
+    <div id="topBar"></div>
+    <div id="bottomBar"></div>
+    <div id="divider"></div>
+  </div>
+</body>
+</html>
