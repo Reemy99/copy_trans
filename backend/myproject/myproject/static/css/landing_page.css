@@ -1,0 +1,216 @@
+body {
+    background-color: #1b0b3bf6; /* Dark background */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative; /* Added to ensure absolute positioning within the body */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+    margin: 0; /* Reset default margin */
+    /*overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+    color: #4df9ff; /* Neon-like blue for headings */
+}
+
+#loginForm {
+    background-color: #04000cf6; /* Darker box for form */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333; /* Slightly lighter background for inputs */
+    border: 1px solid #555;
+    color: #ddd; /* Light text for input */
+    border-radius: 4px;
+}
+
+#loginForm input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff00ff; /* Bright neon color for submit button */
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Style for the "Log In" link */
+#loginButton {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff00ff; /* Bright neon color for login link */
+    color: white;
+    text-decoration: none; /* Remove underline from the link */
+    display: block; /* Make it a block-level element to fill the width */
+    text-align: center; /* Center the text horizontally */
+}
+#loginForm input[type="submit"]:hover {
+    background-color: #ee00ee; /* Slightly darker neon color on hover */
+}
+
+a {
+    color: #4df9ff; 
+}
+
+a:hover {
+    color: #3beff7;
+}
+
+p {
+    color: #888;
+}
+
+#signupPrompt {
+    position: sticky;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #04000cf6;
+    color: #fff;
+    transform: translate(0%, 800%);
+}
+
+/* _______________________loading animation______________________________ */
+
+/* .loding-container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+  } */
+  
+  .preloader {
+    height: 20px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .preloader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: 2px solid white;
+  }
+  .preloader--dot:first-child {
+    background-color: #8cc759;
+    animation-delay: 0.5s;
+  }
+  .preloader--dot:nth-child(2) {
+    background-color: #8c6daf;
+    animation-delay: 0.4s;
+  }
+  .preloader--dot:nth-child(3) {
+    background-color: #ef5d74;
+    animation-delay: 0.3s;
+  }
+  .preloader--dot:nth-child(4) {
+    background-color: #f9a74b;
+    animation-delay: 0.2s;
+  }
+  .preloader--dot:nth-child(5) {
+    background-color: #60beeb;
+    animation-delay: 0.1s;
+  }
+  .preloader--dot:nth-child(6) {
+    background-color: #fbef5a;
+    animation-delay: 0s;
+  }
+  .preloader--text {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+  }
+  .preloader--text:after {
+    content: "Loading";
+    font-weight: bold;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes loader {
+    15% {
+      transform: translateX(0);
+    }
+    45% {
+      transform: translateX(230px);
+    }
+    65% {
+      transform: translateX(230px);
+    }
+    95% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes loading-text {
+    0% {
+      content: "Loading";
+    }
+    25% {
+      content: "Loading.";
+    }
+    50% {
+      content: "Loading..";
+    }
+    75% {
+      content: "Loading...";
+    }
+  }
+
+  /* _______________________Authentication Code______________________________ */
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  color :rgba(18, 10, 47, 0.665);
+  background-color: rgba(18, 10, 47, 0.665);
+  z-index: 999;
+  left: 35px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content {
+  background-color: #d1cef4;
+  margin: 20% auto;
+  padding: 40px; /* control the size of the box*/
+  border: 4px solid #aa00ff;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+.popup-content input[type="text"] {
+  color: black; /* Change text color to black */
+}

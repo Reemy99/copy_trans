@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PING PONG</title>
+    <link rel="stylesheet" href="gameOptions.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <header class="top-navbar">
+    <span class="custom-span"><strong>Ping Pong</strong></span>
+
+    <nav>
+        <a href="#"><strong>Play</strong></a>
+        <a href="#"><strong>Player Profile</strong></a>
+
+        <div class="profile-circle" onclick="showPopup(event)">
+          <img src="../images/Controller.jpeg" alt="Profile Image">
+      </div>
+      </nav>
+  </header>
+    <div class="body-content">
+          <!--Content-->
+        <div class="main-content">
+          <main class="spa-content">
+            <p class= "intro">Enjoy PONG Game With Different Maps</p>
+            <button id="playNowbtn">PLAY NOW</button>
+          </main>
+        </div>>
+      
+    <!-- SIDE BAR -->
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <div class="header">
+            <h2>Reem Aldahhan</h2>
+            <h5>Bio</h5>
+          </div>
+          
+          <ul id='friend-list'>
+          </li>
+          <li class='friend'>
+            <img src='../images/Controller.jpeg' />
+            <div class='name'>
+              Shatha Jad Allah
+            </div>
+            <div class='bio'>
+              Bio
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='../images/Controller.jpeg' />
+            <div class='name'>
+              Hammam
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='../images/Controller.jpeg' />
+            <div class='name'>
+              Yousef
+            </div>
+          </li>
+        </ul>
+        
+        <div class="sidebar-bottom">
+          <button id="logoutBtn">Log Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

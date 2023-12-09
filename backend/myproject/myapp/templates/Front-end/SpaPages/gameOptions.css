@@ -1,0 +1,224 @@
+body {
+  margin: auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../images/games.jpg);
+  background-size: cover;
+  display: flex; 
+  flex-direction: column;
+}
+.body-content{
+  display: flex;
+  flex: 1;
+}
+.main-content{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-navbar {
+  background: #8CA5FF;
+  color: rgb(250, 247, 251);
+  padding: 0px;
+  position: relative; 
+}
+
+.top-navbar nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-navbar nav .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* covers the entire circle */
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none; /* Remove underline*/
+  margin-bottom: 20px;
+
+}
+
+a strong {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  margin: 50px;
+  font-size: 26px;
+}
+.custom-span {
+  position: relative;
+  font-size: 26px;
+  top: 39px;
+  left: 10px;
+  /* margin-bottom: 20px; */
+
+}
+
+.navbar-right a {
+  margin-left: 0px;
+}
+
+/* ------------------------------------------------------------------- */
+
+.sidebar {
+  background: #8CA5FF;
+  width: 250px;
+  height: 100vh;
+  float: right; /* Change 'left' to 'right' */
+  background-image: linear-gradient(315deg, #25D1BC 0%, #8CA5FF 75%);
+  /* #8CA5FF, #25D1BC */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: rgb(3, 26, 84);
+}
+
+.header h2,
+.header h5 {
+  margin: 5px 0;
+  color:white;
+}
+
+#friend-list { 
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50%;
+  list-style-type: none;
+  color:white;
+}
+
+.friend {
+  width: 300px;
+  height: 60px;
+  background: rgba(160, 214, 250, 0.666);
+  border-bottom: 1px solid #DDD;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.friend img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid #ddf4ff;
+  object-fit: cover;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.friend .name {
+  font-size: px;
+}
+
+.friend .bio{
+  font-size:12px;
+}
+.friend.selected img {
+  border-color: white;
+}
+
+.friend:not(.selected):hover {
+  background: #beeeff;
+}
+
+.sidebar-bottom {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+#logoutBtn{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+  }
+  .css-button-gradient--4:hover {
+    background-position: right center;
+  }
+  .css-button-gradient--4:active {
+    top: 2px;
+  }
+
+
+#logoutBtn:hover {
+  background-color: rgb(255, 121, 235);
+}
+
+/* ------------------------------------------------------------------- */
+
+.spa-content {
+  padding: 50px;
+  padding-top: 50px;
+  border-radius: 30px;
+  margin: auto;
+  padding-bottom: 150px;
+  justify-content: center;
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  background: rgba(255,255,255,0.4);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+}
+
+.intro{
+  color: white;
+  font-weight: bold;
+  font-size:xx-large;
+}
+
+#playNowbtn
+{
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+  margin: 20px;
+  flex-grow: 1;
+}
+

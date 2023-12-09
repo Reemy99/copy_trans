@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}"> -->
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../../../myproject/static/css/register.css">
+    <title>Register</title>
+  </head>
+  <body>
+    </form>
+
+    <form action="/register/" method="post">
+      {% csrf_token %}<br><br>
+      First Name: <input type="text" name="firstname"><br><br>
+      Last Name: <input type="text" name="lasttname"><br><br>
+      Display Name: <input type="text" name="nickname"><br><br>
+      User Name: <input type="text" name="username"><br><br>
+      Birthday: <input type="date" name="date"><br><br>
+      Email: <input type="email" required name="Email"><br><br>
+      Password: <input type="password" min="6" name="password"><br><br>
+      Gender:<br>
+        <input type="radio" name="Gender" value="male">Male<br>
+        <input type="radio" name="Gender" value="female">Female<br><br>
+        </select><br>
+        <!-- <button onclick="openPopup()">Register</button> -->
+        <input type="submit" value="Register">
+        <input type="reset">     
+      </form>
+
+<!-- _________________________lading animation________________________________ -->
+
+<!-- <div class='loding-container'> -->
+  <div class='preloader' id='preloader'>
+    <div class='preloader--dot'></div>
+    <div class='preloader--dot'></div>
+    <div class='preloader--dot'></div>
+    <div class='preloader--dot'></div>
+    <div class='preloader--dot'></div>
+    <div class='preloader--dot'></div>
+    <div class='preloader--text'></div>
+  </div>
+  <!-- </div> -->
+  
+  <script>
+    var loader = document.getElementById("preloader");
+    
+    window.addEventListener("load" , function(){
+      loader.style.display="none";
+    })
+    </script>
+  </body>
+</html>

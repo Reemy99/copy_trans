@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(22, 24, 47); /* Dark background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #3a275c; /* Slightly lighter dark shade for form background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Headings and Labels */
+h2 {
+    color: #00e5ff; /* Vibrant teal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #fefefe;
+}
+
+/* Input Fields */
+input[type="text"], input[type="date"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #00e5ff; /* Vibrant teal */
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #66ffff; /* Lighter teal for focus */
+    outline: none;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"] {
+    background-color: #00e5ff; /* Vibrant teal */
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #66ffff; /* Lighter teal for hover */
+}
+
+
+input[type="reset"] {
+    background-color: #666; /* Dark grey */
+    color: white;
+    float: right;
+}
+
+input[type="reset"]:hover {
+    background-color: #4d4d4d; /* Lighter grey for hover */
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ____________________Loading Animation________________________ */
+/* .loding-container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+} */
+
+.preloader {
+    height: 20px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.preloader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: 2px solid white;
+}
+.preloader--dot:first-child {
+    background-color: #8cc759;
+    animation-delay: 0.5s;
+}
+.preloader--dot:nth-child(2) {
+    background-color: #8c6daf;
+    animation-delay: 0.4s;
+}
+.preloader--dot:nth-child(3) {
+    background-color: #ef5d74;
+    animation-delay: 0.3s;
+}
+.preloader--dot:nth-child(4) {
+    background-color: #f9a74b;
+    animation-delay: 0.2s;
+}
+.preloader--dot:nth-child(5) {
+    background-color: #60beeb;
+    animation-delay: 0.1s;
+}
+.preloader--dot:nth-child(6) {
+    background-color: #fbef5a;
+    animation-delay: 0s;
+}
+.preloader--text {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+}
+.preloader--text:after {
+    content: "Loading";
+    font-weight: bold;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+    45% {
+        transform: translateX(230px);
+    }
+    65% {
+        transform: translateX(230px);
+    }
+    95% {
+        transform: translateX(0);
+    }
+}
+@keyframes loading-text {
+    0% {
+        content: "Loading";
+    }
+    25% {
+        content: "Loading.";
+    }
+    50% {
+        content: "Loading..";
+    }
+    75% {
+        content: "Loading...";
+    }
+}
